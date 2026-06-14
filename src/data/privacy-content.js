@@ -1,0 +1,15 @@
+// PIPEDA + Quebec Law 25 compliant privacy policy content.
+
+export const PRIVACY_CONTENT = {
+  effective: "Effective: 2026. We operate under Canadian federal privacy law (PIPEDA) and, if you're in Quebec, Law 25. Your data is hosted in Canada, in the Supabase Canada Central region.",
+  sections: [
+    {h:"What we actually collect", b:"For your account: email, full name, professional credential body and number, province, specialty. For things you contribute: the text you submit, the source you cite, and a timestamp. For analytics: anonymous page views and feature usage, no individual browsing history. We do not collect project details that you haven't deliberately saved. We do not collect your employer's confidential information or your clients' information."},
+    {h:"Why we collect any of it", b:"Credentials so reviewers can verify professional standing before approving content. Submissions so we can put a name and credential next to verified content. Analytics so we can see what's working and what's not. That is the entire list. There is no other purpose."},
+    {h:"Who can see it", b:"Your account information (email, credentials) is visible only to platform administrators. Published contributions display your name and credential publicly, because attribution is the foundation of trust in the data. We do not sell, rent, or share personal data with third parties. Ever."},
+    {h:"Where it lives", b:"In Canada. The database is hosted on Supabase in the Canada Central region. Analytics are processed by privacy-respecting tools that don't use third-party cookies. We don't transfer personal data outside Canada."},
+    {h:"How long we hold onto it", b:"Account data: while your account is active, plus 24 months after closure in case you come back. Audit logs: kept permanently as a professional record of who reviewed what. Published contributions: kept permanently because other engineers may have relied on them, but you can ask us to redact your name from a contribution while the value itself stays."},
+    {h:"Your rights, the practical version", b:"You can ask for a copy of everything we hold about you. You can correct anything inaccurate. You can close your account and have your personal information removed (with the audit retention exception above). If you're in Quebec, Law 25 also gives you data portability and the right to object to automated decision-making. Email privacy@civilref.ca for any of these and we'll deal with it."},
+    {h:"If something goes wrong", b:"If a breach occurs that poses a real risk of significant harm, we notify affected individuals and the Office of the Privacy Commissioner of Canada (and the Commission d'accès à l'information du Québec, for Quebec users) as required by law. Same week, by email, no buried clauses."},
+    {h:"If this policy changes", b:"If we change how we handle your data, we tell every account holder by email at least 30 days before the change takes effect, and post a notice in the app. Material changes require renewed consent."},
+  ],
+};

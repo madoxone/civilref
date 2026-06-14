@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   Design tokens as CSS variables
+   These mirror the Tailwind colors but are also usable in plain CSS or inline.
+   ============================================================================ */
+:root {
+  --color-bg:         #09101e;
+  --color-surface:    #101828;
+  --color-surface-hi: #162032;
+  --color-border:     #1e3050;
+  --color-border-hi:  #2a4570;
+  --color-text:       #e8f0fe;
+  --color-text-sub:   #9ab0d4;
+  --color-text-muted: #6a83a8;
+  --color-blue:       #5aa0e8;
+  --color-blue-dim:   #1a3a6a;
+  --color-green:      #52d09c;
+  --color-green-dim:  #0d3525;
+  --color-amber:      #dba94d;
+  --color-amber-dim:  #3a2810;
+  --color-red:        #f06d6d;
+  --color-purple:     #ad94f0;
+  --color-purple-dim: #2a1a5a;
+  --color-teal:       #45d0d0;
+  --color-teal-dim:   #0d3535;
+  --color-focus:      #7fb8ff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+/* Focus ring, accessible */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Animation */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 0.3s ease forwards; }
+
+/* Discipline color helpers, used in className via brackets if needed */
+[data-disc="utilities"]    { --disc-color: var(--color-blue); }
+[data-disc="traffic"]      { --disc-color: var(--color-amber); }
+[data-disc="structural"]   { --disc-color: var(--color-purple); }
+[data-disc="civil"]        { --disc-color: var(--color-green); }
+[data-disc="construction"] { --disc-color: var(--color-teal); }
