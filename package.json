@@ -6,7 +6,7 @@
   "description": "Canadian civil engineering reference platform",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
